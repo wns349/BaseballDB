@@ -1,0 +1,286 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/player_stat_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#EAECFC"
+            android:gravity="center|top"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/txtSearchPlayerStat"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="선수 이름을 입력하세요."
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/cmdSearchPlayerStat"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="검색" />
+        </LinearLayout>
+
+        <!-- 기본적으로 선수 사진과 이름, 번호, 포지션을 보여준다 -->
+
+        <LinearLayout
+            android:id="@+id/ps_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/ps_image"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:padding="1dp" />
+
+            <LinearLayout
+                android:id="@+id/pss_basic"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_corner"
+                android:orientation="vertical"
+                android:paddingTop="2dp" >
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="1dp"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tvNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="1dp"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tvPosition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="1dp"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 스페이싱 선수 기본 정보 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50px"
+            android:gravity="bottom" >
+
+            <TextView
+                android:id="@+id/tvPlayer_Basic"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="bottom"
+                android:paddingTop="5dp"
+                android:text="선수 정보"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <!-- 선수 기본 정보를 여기서 출력 한다 -->
+
+        <LinearLayout
+            android:id="@+id/ps_basic_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <!-- 스페이싱   2012년 기록 -->
+
+        <LinearLayout
+            android:id="@+id/ps_this_year_title_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom" >
+
+            <TextView
+                android:id="@+id/tvPlayer2010"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="bottom"
+                android:paddingTop="5dp"
+                android:text="2012년 기록"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <!-- 2012년 기록 -->
+
+        <LinearLayout
+            android:id="@+id/ps_this_year_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <HorizontalScrollView
+                android:id="@+id/ScrollView06"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" >
+
+                <TableLayout
+                    android:id="@+id/ps_this_year_table"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:stretchColumns="*" >
+                </TableLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <!-- 스페이싱   최근 5경기 기록 -->
+
+        <LinearLayout
+            android:id="@+id/ps_recent_title_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom" >
+
+            <TextView
+                android:id="@+id/tvPlayerRecent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="bottom"
+                android:paddingTop="5dp"
+                android:text="최근 5경기 기록"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <!-- 최근 5경기 기록 -->
+
+        <LinearLayout
+            android:id="@+id/ps_recent_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <HorizontalScrollView
+                android:id="@+id/ScrollView02"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true" >
+
+                <TableLayout
+                    android:id="@+id/ps_recent_attr_table"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:padding="5dp" />
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/ScrollView03"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" >
+
+                <TableLayout
+                    android:id="@+id/ps_recent_table"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:padding="5dp"
+                    android:stretchColumns="*" >
+                </TableLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <!-- 스페이싱   통산 기록 -->
+
+        <LinearLayout
+            android:id="@+id/ps_history_title_layout"
+             android:paddingTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom" >
+
+            <TextView
+                android:id="@+id/tvPlayerHistory"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="bottom"
+                android:paddingTop="5dp"
+                android:text="선수 통산 기록"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <!-- 선수 통산 기록 -->
+
+        <LinearLayout
+            android:id="@+id/ps_history_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <HorizontalScrollView
+                android:id="@+id/ScrollView04"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true" >
+
+                <TableLayout
+                    android:id="@+id/ps_history_attr_table"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:padding="5dp" />
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/ScrollView05"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true" >
+
+                <TableLayout
+                    android:id="@+id/ps_history_table"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:padding="5dp"
+                    android:stretchColumns="*" >
+                </TableLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <!-- 즐겨찾기 버튼 -->
+
+        <Button
+            android:id="@+id/cmdFav"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text=" 즐겨찾기 등록" />
+    </LinearLayout>
+
+</ScrollView>

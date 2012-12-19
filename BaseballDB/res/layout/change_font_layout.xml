@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android   = "http://schemas.android.com/apk/res/android"
+	android:id    = "@+id/dialogLayout"
+	android:layout_width = "fill_parent"
+	android:layout_height = "fill_parent"
+	android:orientation = "vertical"
+	android:minWidth="300dp" 
+  android:minHeight="300dp"
+>
+	<TextView
+	 android:id     = "@+id/lblEngine"
+	 android:layout_width  = "fill_parent"
+	 android:layout_height  = "wrap_content"
+	 android:layout_marginTop = "10dip"
+	 android:text    = " 폰트 크기  "
+	 android:paddingLeft = "10dp"
+	/>
+
+   <Spinner 
+		 android:id     = "@+id/spinnerEngine"
+		 android:layout_width  = "fill_parent"
+		 android:layout_height  = "wrap_content"
+		 android:drawSelectorOnTop = "true"
+		 android:paddingLeft = "10dp"
+		 android:paddingRight = "10dp"
+   />
+
+	<LinearLayout
+		android:id = "@+id/optionSubLayout"
+		android:layout_width = "fill_parent"
+		android:layout_height = "fill_parent"
+		android:orientation = "horizontal"
+		android:layout_gravity = "center"
+		>
+ 	<Button	
+ 		android:id	= "@+id/cmdSave"
+ 		android:layout_width = "120dp"
+ 		android:layout_height = "wrap_content"
+ 		android:text 	= "  저장  "
+ 		android:paddingRight = "10dp"
+ 		android:minWidth = "120dp"
+ 	/>
+ 	
+ 	<Button	
+ 		android:id	= "@+id/cmdCancel"
+ 		android:layout_width = "120dp"
+ 		android:layout_height = "wrap_content"
+ 		android:text 	= "  취소  "
+ 		android:minWidth = "120dp"
+ 	/>
+ 	</LinearLayout>
+</LinearLayout>

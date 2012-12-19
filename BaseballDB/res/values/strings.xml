@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Main!</string>
+    <string name="app_name">KBO 기록실</string>
+    <string name="app_description">
+    본 프로그램은 한국야구위원회 웹사이트 (http://www.koreabaseball.com)에 
+    접속하여 프로야구 선수들 기록을 보여줍니다.\n\n
+  선수 정보 및 기록은 한국야구위원회 웹사이트에 있는 데이터 그대로를 보여줍니다.\n
+  즉, 선수 정보 및 기록 업데이트는 한국위원회 웹사이트에서 이루어져야 하는 부분입니다.\n 
+  이 점에 대해 오해 없으시길 바랍니다. \n\n
+  이 프로그램은 무료로써, 야구를 좋아하시는 분 누구나 사용 가능 합니다.\n\n
+  버그나 건의는 언제든지 아래 연락처로 연락주세요.\n\n
+  감사합니다. 
+    </string>
+    <string name="app_version">v 2.22 201203</string>
+    
+</resources>

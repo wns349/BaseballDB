@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<TextView android:id="@+id/lbl_setting1" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="화면 설정"
+		android:textSize="15dp"
+		android:textColor = "#000000"
+		android:background = "#DADADA" 
+		/>
+	<ListView android:id="@+id/listScreen" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+
+	<TextView 
+		android:layout_width = "fill_parent"
+		android:layout_height = "30dp"
+	/>
+	<TextView android:id="@+id/lbl_setting2" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="선수 정보 폰트 설정"
+		android:textSize="15dp"
+		android:textColor = "#000000"
+		android:background = "#DADADA" 
+		/>
+
+	<ListView android:id="@+id/listFont" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+
+</LinearLayout>
